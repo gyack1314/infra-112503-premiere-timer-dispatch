@@ -1,0 +1,6 @@
+{"at":0,"kind":"plan","record":{"show":"show","region":"east","revision":1,"tz":"America/New_York","actions":[{"action":"remind","local":"2026-11-01T01:30:00","fold":0,"window":60,"miss":"skip"},{"action":"room","local":"2026-11-01T01:30:00","fold":1,"window":120,"miss":"catch_up"}]}}
+{"at":1,"kind":"clock","record":{"utc":"2026-11-01T05:29:55Z"}}
+{"at":2,"kind":"restart","record":{}}
+{"at":3,"kind":"clock","record":{"utc":"2026-11-01T06:33:00Z"}}
+{"at":4,"kind":"pull","record":{"provider":"partner","show":"show","region":"east"}}
+{"at":5,"kind":"inspect","record":{"show":"show","region":"east"}}

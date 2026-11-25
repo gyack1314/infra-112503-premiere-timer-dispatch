@@ -1,0 +1,9 @@
+{"at":0,"kind":"plan","record":{"show":"D","region":"s","revision":1,"tz":"UTC","actions":[{"action":"announce","local":"2026-12-01T09:00:00","window":180,"miss":"skip"},{"action":"join","local":"2026-12-01T09:03:00","window":120,"miss":"catch_up","needs":["announce"]}]}}
+{"at":1,"kind":"clock","record":{"utc":"2026-12-01T09:00:15Z"}}
+{"at":2,"kind":"pull","record":{"provider":"B","show":"D","region":"s"}}
+{"at":3,"kind":"plan","record":{"show":"D","region":"s","revision":2,"tz":"UTC","actions":[{"action":"announce","local":"2026-12-01T10:00:00","window":180,"miss":"skip"},{"action":"join","local":"2026-12-01T10:03:00","window":120,"miss":"catch_up","needs":["announce"]}]}}
+{"at":4,"kind":"callback","record":{"provider":"B","show":"D","region":"s","action":"announce","revision":1,"state":"unknown"}}
+{"at":5,"kind":"clock","record":{"utc":"2026-12-01T10:04:00Z"}}
+{"at":6,"kind":"pull","record":{"provider":"B","show":"D","region":"s"}}
+{"at":7,"kind":"callback","record":{"provider":"B","show":"D","region":"s","action":"announce","revision":1,"state":"sent","recipients":["a","c"],"executed_at":"2026-12-01T09:00:20Z"}}
+{"at":8,"kind":"inspect","record":{"show":"D","region":"s"}}
