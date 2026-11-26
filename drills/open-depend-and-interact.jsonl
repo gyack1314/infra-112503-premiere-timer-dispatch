@@ -1,0 +1,12 @@
+{"at":0,"kind":"plan","record":{"show":"premiere","region":"east","revision":1,"tz":"America/New_York","actions":[{"action":"room","local":"2026-11-01T01:20:00","fold":0,"window":300,"miss":"catch_up"},{"action":"remind","local":"2026-11-01T01:30:00","fold":0,"window":120,"miss":"skip","needs":["room"]},{"action":"join","local":"2026-11-01T01:33:00","fold":0,"window":600,"miss":"catch_up","needs":["room","remind"],"requires_region_open":true}]}}
+{"at":1,"kind":"clock","record":{"utc":"2026-11-01T05:20:05Z"}}
+{"at":2,"kind":"pull","record":{"provider":"partner","show":"premiere","region":"east"}}
+{"at":3,"kind":"callback","record":{"provider":"partner","show":"premiere","region":"east","action":"room","revision":1,"state":"sent","recipients":["room-service"],"executed_at":"2026-11-01T05:20:10Z"}}
+{"at":4,"kind":"publish","record":{"show":"premiere","region":"east","status":"open","published_at":"2026-11-01T05:20:20Z","source":"region-console"}}
+{"at":5,"kind":"clock","record":{"utc":"2026-11-01T05:30:05Z"}}
+{"at":6,"kind":"pull","record":{"provider":"partner","show":"premiere","region":"east"}}
+{"at":7,"kind":"callback","record":{"provider":"partner","show":"premiere","region":"east","action":"remind","revision":1,"state":"sent","recipients":["a","b","c"],"executed_at":"2026-11-01T05:30:09Z"}}
+{"at":8,"kind":"clock","record":{"utc":"2026-11-01T05:33:05Z"}}
+{"at":9,"kind":"pull","record":{"provider":"partner","show":"premiere","region":"east"}}
+{"at":10,"kind":"callback","record":{"provider":"partner","show":"premiere","region":"east","action":"join","revision":1,"state":"sent","recipients":["a","b","c","d"],"executed_at":"2026-11-01T05:33:20Z"}}
+{"at":11,"kind":"inspect","record":{"show":"premiere","region":"east"}}
